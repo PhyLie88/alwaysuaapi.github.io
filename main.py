@@ -86,7 +86,7 @@ def countryball():
             'error': 'Missing argument(s)!'
         }
         return jsonify(w), 400
-  a = Image.open('ball-1.png').convert('RGBA')
+  a = Image.open('flask_site/ball-1.png').convert('RGBA')
   d = BytesIO()
   c = Image.new('RGBA', (1280, 1280), (0, 0, 0, 0))
   r = requests.get(request.args.get('image'))
@@ -157,7 +157,7 @@ def twodomers():
             'error': 'Missing argument(s)!'
         }
         return jsonify(w), 400
-  a = Image.open('guys-1.png').convert('RGBA')
+  a = Image.open('flask_site/guys-1.png').convert('RGBA')
   d = BytesIO()
   c = Image.new('RGBA', (2048, 1619), (0, 0, 0, 0))
   r = requests.get(request.args.get('image'))
@@ -176,7 +176,7 @@ def whathow():
             'error': 'Missing argument(s)!'
         }
         return jsonify(w), 400
-  a = Image.open('whathow.png').convert('RGBA')
+  a = Image.open('flask_site/whathow.png').convert('RGBA')
   d = BytesIO()
   c = Image.new('RGBA', (1160, 870), (0, 0, 0, 0))
   r = requests.get(request.args.get('image'))
